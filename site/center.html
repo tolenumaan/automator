@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<header>
+<style type="text/css">
+		div
+		{
+		font-family: "arial";
+		font-size: 16px;
+		}
+		.edraft
+		{
+			height: 300px;
+			border-style: solid;
+			border-width: 1px;
+			border-color: black;
+			align: left;
+
+		}
+
+		.caveats
+		{
+			font-size: 12px;
+			border-style: solid;
+			border-color: black;
+			height: 50px;
+			border-width: 1px;
+
+		}
+			
+/*		.footer
+		{
+			height: 100px;
+			font-style: arial;
+			font-size: 16px;
+			border-style: solid;
+			border-color: black;
+			align: left;
+
+		}*/
+</style>
+
+<script type="text/javascript">
+	function emaildraft() {
+	document.getElementById("edraft").contentEditable='true'; 
+
+	}
+</script>
+</header>
+<body>
+
+
+	<div>
+	<p>Dear
+	<input type="textbox" name="cname" autofocus="true" onchange="emaildraft()">
+</div>
+
+
+<div id=edraft class="edraft">
+
+
+
+</div>
+<br>
+
+<div id=signoff class="footer">
+Thank you for contacting British Gas.
+<br><br>
+Kind Regards,
+<br>
+Numaan Tole
+<br><br>
+<a href="https://www.britishgas.co.uk" target="_blank">www.britishgas.co.uk</a>
+</div>
+<br>
+
+<div id=caveats class="caveats">
+**We may record your calls for training and quality purposes. Landline numbers are free. Other Numbers are chargeable.
+<br><br>
+</div>
+
+
+<div id=signoff class="footer">
+<p>Your Gas Customer Reference Number:
+	<input type="textbox" name="onlygas"></p>
+<p>Your Electricity Customer Reference Number:
+	<input type="textbox" name="onlygas"></p>
+</div>
+
+
+
+</body>
+</html>

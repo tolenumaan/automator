@@ -14,11 +14,10 @@ My Email: <input type="text" id="myemail" value="">
 <p>Click the button to display the value of the value attribute of the text field.</p>
 
 <button onclick="myFunction()">Try it</button>
-<div id="box">
+
 <p id="F1"></p>
 <p id="L1"></p>
 <p id="ME1"></p>
-</div>
 <script>
 function myFunction() {
     var x = document.getElementById("fname").value;
@@ -27,7 +26,7 @@ function myFunction() {
     document.getElementById("F1").innerHTML = "First name is " + x;
     document.getElementById("L1").innerHTML = "Last name is " + y;
  	document.getElementById("ME1").innerHTML = z;
-    document.getElementById("box").contentEditable='true'; 
+         
 }
 </script>
 
